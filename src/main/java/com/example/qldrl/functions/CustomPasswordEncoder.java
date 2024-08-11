@@ -36,8 +36,8 @@ public class CustomPasswordEncoder {
             // Lấy mã lớp từ ký tự thứ 8 đến 9
             String classPart = classCode.substring(7, 9);
 
-            // Tạo mã cố vấn bằng cách ghép nối "CV" với mã ngành, năm và mã lớp
-            return "CV" + majorCode + year + classPart;
+            // Tạo mã cố vấn bằng cách ghép nối với mã ngành, năm và mã lớp
+            return majorCode + year + classPart;
         }
         return null;
     }

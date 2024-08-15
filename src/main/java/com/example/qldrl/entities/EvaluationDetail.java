@@ -20,7 +20,7 @@ public class EvaluationDetail {
     @JoinColumn(name = "MaPhieu")
     private Evaluation evaluation;
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "MaTieuChiPhu")
     private SubCriteriaType1 subCriteriaType;
 
